@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/amount-as-coins" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/book-title-complexity-sorter" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/boomerang" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/bouncing-ball" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/car-park" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/day-of-the-week" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/divisible-by" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fibonacci" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/fizzbuzz" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/football-task" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/golf-shot-calculator" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/password-checker" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/rock-paper-scissors" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/roman-numerals" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/say-that-again" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/seven-boom" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/string-calculator" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/sum-of-sequence" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/temperature-converter" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/zoo-trip" vcs="Git" />
+  </component>
+</project>
