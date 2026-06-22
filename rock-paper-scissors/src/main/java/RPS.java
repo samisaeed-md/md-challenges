@@ -2,6 +2,9 @@ import java.util.*;
 
 public class RPS {
     static void main() {
+        rps();
+    }
+    static void rps(){
         Scanner player1Input = new Scanner(System.in);
         System.out.println("ROCK,PAPER,SCISSORS: ");
 
@@ -10,21 +13,21 @@ public class RPS {
 
         int randomIndex = (int) (Math.random() * 3);
 
-        String[] rps = {"ROCK","PAPER","SCISSORS"};
+        String[] rps = {"ROCK", "PAPER", "SCISSORS"};
 
         String cpu = rps[randomIndex];
 
         System.out.println("CPU: " + cpu);
 
-        if(player1.equals(cpu)){
+        if (player1.equals(cpu)) {
             System.out.println("DRAW");
-        } else if (player1.equals("ROCK") && cpu.equals("SCISSORS")){
+        } else if (player1.equals("ROCK") && cpu.equals("SCISSORS")) {
             System.out.println("YOU WIN");
-        } else if (player1.equals("SCISSORS") && cpu.equals("PAPER")){
+        } else if (player1.equals("SCISSORS") && cpu.equals("PAPER")) {
             System.out.println("YOU WIN");
-        } else if (player1.equals("PAPER") && cpu.equals("ROCK")){
+        } else if (player1.equals("PAPER") && cpu.equals("ROCK")) {
             System.out.println("YOU WIN");
-        } else{
+        } else {
             System.out.println("YOU LOSE");
         }
     }
