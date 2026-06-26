@@ -1,34 +1,52 @@
 import java.util.*;
 
 public class RPS {
-    static void main() {
+
+    static void main(String[] args) {
         rps();
     }
-    static void rps(){
-        Scanner player1Input = new Scanner(System.in);
-        System.out.println("ROCK,PAPER,SCISSORS: ");
 
-        String player1 = player1Input.nextLine().toUpperCase();
-        System.out.println("You picked: " + player1);
+    static void rps() {
+        Scanner scanner = new Scanner(System.in);
 
-        int randomIndex = (int) (Math.random() * 3);
+        System.out.println("ROCK, PAPER, SCISSORS: ");
 
-        String[] rps = {"ROCK", "PAPER", "SCISSORS"};
+        String playerChoice = scanner.nextLine().toUpperCase();
+        String cpuChoice = getRandomChoice();
 
-        String cpu = rps[randomIndex];
+        System.out.println("You picked: " + playerChoice);
+        System.out.println("CPU: " + cpuChoice);
 
-        System.out.println("CPU: " + cpu);
+        String result = getResult(playerChoice, cpuChoice);
 
-        if (player1.equals(cpu)) {
-            System.out.println("DRAW");
-        } else if (player1.equals("ROCK") && cpu.equals("SCISSORS")) {
-            System.out.println("YOU WIN");
-        } else if (player1.equals("SCISSORS") && cpu.equals("PAPER")) {
-            System.out.println("YOU WIN");
-        } else if (player1.equals("PAPER") && cpu.equals("ROCK")) {
-            System.out.println("YOU WIN");
-        } else {
-            System.out.println("YOU LOSE");
+        System.out.println(result);
+    }
+
+    static String getRandomChoice() {
+        String[] choices = {"ROCK", "PAPER", "SCISSORS"};
+
+        int randomIndex = (int) (Math.random() * choices.length);
+
+        return choices[randomIndex];
+    }
+
+    static String getResult(String player, String cpu) {
+        if (player.equals(cpu)) {
+            return "DRAW";
         }
+
+        if (player.equals("ROCK") && cpu.equals("SCISSORS")) {
+            return "YOU WIN";
+        }
+
+        if (player.equals("SCISSORS") && cpu.equals("PAPER")) {
+            return "YOU WIN";
+        }
+
+        if (player.equals("PAPER") && cpu.equals("ROCK")) {
+            return "YOU WIN";
+        }
+
+        return "YOU LOSE";
     }
 }

@@ -1,21 +1,45 @@
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class RPSTest {
 
-
     @Test
-    void randomIndexShouldBeBetween0And2() {
+    void playerWinsWhenRockBeatsScissors() {
         // Arrange
+        String player = "ROCK";
+        String cpu = "SCISSORS";
 
         // Act
-        int randomIndex = (int) (Math.random() * 3);
+        String result = RPS.getResult(player, cpu);
 
         // Assert
-        assertTrue(randomIndex >= 0 && randomIndex < 3,
-                "randomIndex was out of range: " + randomIndex);
+        assertEquals("YOU WIN", result);
+    }
+
+    @Test
+    void playerLosesWhenRockLosesToPaper() {
+        // Arrange
+        String player = "ROCK";
+        String cpu = "PAPER";
+
+        // Act
+        String result = RPS.getResult(player, cpu);
+
+        // Assert
+        assertEquals("YOU LOSE", result);
+    }
+
+    @Test
+    void playerDrawsWhenBothPickSameChoice() {
+        // Arrange
+        String player = "SCISSORS";
+        String cpu = "SCISSORS";
+
+        // Act
+        String result = RPS.getResult(player, cpu);
+
+        // Assert
+        assertEquals("DRAW", result);
     }
 }
-
-
