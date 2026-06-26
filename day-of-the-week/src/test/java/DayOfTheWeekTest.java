@@ -9,12 +9,15 @@ class DayOfTheWeekTest {
         // Arrange
         DayOfTheWeek dayOfTheWeek = new DayOfTheWeek();
 
-        // Act + Assert
+        // Act
         for (int i = 0; i < 100; i++) {
             int result = dayOfTheWeek.generateRandomDay();
 
-            assertTrue(result >= 1 && result <= 7,
-                    "Generated day was out of range: " + result);
+            // Assert
+            assertTrue(
+                    result >= 1 && result <= 7,
+                    "Generated day was out of range: " + result
+            );
         }
     }
 }
